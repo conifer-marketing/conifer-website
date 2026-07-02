@@ -272,9 +272,23 @@ h1,h2,h3,h4{font-family:var(--disp);letter-spacing:-.025em;line-height:1.04;font
   .hero{min-height:82vh}
   /* on small screens the video sits behind a light veil so ink text stays legible */
   .hero-fade{background:linear-gradient(to bottom,rgba(236,235,227,.50),rgba(236,235,227,.7))}
-  .nav-links{position:fixed;inset:74px 0 auto 0;flex-direction:column;align-items:stretch;gap:0;
-    background:var(--paper);border-bottom:1px solid var(--line);padding:.5rem var(--pad) 1.2rem;
-    transform:translateY(-120%);transition:transform .3s ease;box-shadow:var(--shadow)}
+  .nav-links{
+  position:fixed;
+  inset:74px 0 auto 0;
+  flex-direction:column;
+  align-items:stretch;
+  gap:0;
+  background:var(--paper);
+  border-bottom:1px solid var(--line);
+  padding:.5rem var(--pad) 1.2rem;
+  transform:translateY(-120%);
+  transition:transform .3s ease;
+  box-shadow:var(--shadow);
+  display:flex;
+}
+   .nav-links:not(.open){
+  display:none;
+}
   .nav-links.open{transform:none}
   .nav-link{padding:.9em 0;border-bottom:1px solid var(--line-soft)}
   .nav-link::after{display:none}
