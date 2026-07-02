@@ -325,7 +325,11 @@
       <h2>Get yours!</h2>
       <p class="lead">Tell us what you're building and your performance targets. Our Eng team will reply directly with the best match.</p>
     </div>
-    <form class="form" id="motorForm" novalidate>
+    <form class="form" id="motorForm" name="motor-request" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+  <input type="hidden" name="form-name" value="motor-request">
+  <p style="display:none">
+    <label>Don’t fill this out: <input name="bot-field"></label>
+  </p>
       <div class="field">
         <label for="name">Full name</label>
         <input id="name" name="name" type="text" placeholder="Jane Doe" required>
