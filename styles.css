@@ -111,7 +111,12 @@ h1,h2,h3,h4{font-family:var(--disp);letter-spacing:-.025em;line-height:1.04;font
 
 /* market — image + overlaid statement, cream feather on all edges */
 .market .frame{position:relative;border-radius:var(--r-xl);overflow:hidden}
-.market .frame img{width:100%;height:auto;display:block}
+.market .frame img, .frame video{
+  width:100%;
+  display:block;
+  border-radius:var(--r-xl);
+  object-fit:cover;
+}
 .market .frame::after{content:"";position:absolute;inset:0;pointer-events:none;
   background:linear-gradient(105deg,var(--paper) 0%,rgba(236,235,227,.5) 34%,rgba(236,235,227,0) 60%)}
 .market .statement{position:absolute;z-index:3;top:clamp(2rem,4vw,3rem);
