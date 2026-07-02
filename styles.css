@@ -159,7 +159,13 @@ h1,h2,h3,h4{font-family:var(--disp);letter-spacing:-.025em;line-height:1.04;font
 .approach h2{font-size:clamp(2rem,4vw,3.3rem)}
 
 /* press */
-.press-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem;max-width:860px}
+.press-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:1.5rem;
+  max-width:1200px;
+  margin:0 auto;
+}
 .press-card{display:block;border-radius:var(--r);overflow:hidden;border:1px solid var(--line);
   background:var(--paper-2);transition:.25s;box-shadow:var(--shadow)}
 .press-card img{width:100%;height:auto;display:block;object-fit:contain}
