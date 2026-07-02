@@ -64,15 +64,4 @@
   } else {
     document.querySelectorAll('[data-count]').forEach(function(el){ count(el); });
   }
-
-  /* form (front-end only — wire to your real endpoint) */
-  var form = document.getElementById('motorForm');
-  if(form){
-    form.addEventListener('submit', function(e){
-      e.preventDefault();
-      if(!form.checkValidity()){ form.reportValidity(); return; }
-      document.getElementById('formNote').classList.add('ok');
-      form.reset();
-    });
-  }
 })();
