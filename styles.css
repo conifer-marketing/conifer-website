@@ -39,7 +39,7 @@ h1,h2,h3,h4{font-family:var(--disp);letter-spacing:-.025em;line-height:1.04;font
 
 /* ---------- the accent: black text on a lime highlight ---------- */
 .hi{background:var(--signal);color:var(--ink);
-  padding:.01em .20em;border-radius:.15em;
+  padding: .02em .18em;border-radius:.15em;
   -webkit-box-decoration-break:clone;box-decoration-break:clone}
 
 /* ---------- buttons (friendly pills) ---------- */
