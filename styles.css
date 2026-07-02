@@ -82,8 +82,8 @@ h1,h2,h3,h4{font-family:var(--disp);letter-spacing:-.025em;line-height:1.04;font
 
 /* ============================ HERO (full-bleed video + left cream fade) ============================ */
 .hero{
-  --hero-fade-solid:28%;   /* how far the solid cream reaches from the left */
-  --hero-fade-end:62%;     /* where the fade fully clears to reveal the video */
+  --hero-fade-solid:18%;   /* how far the solid cream reaches from the left */
+  --hero-fade-end:50%;     /* where the fade fully clears to reveal the video */
   position:relative;overflow:hidden;background:var(--paper);
   min-height:clamp(560px,84vh,820px);display:flex;align-items:center}
 .hero-bg{position:absolute;inset:0;z-index:0}
@@ -94,7 +94,7 @@ h1,h2,h3,h4{font-family:var(--disp);letter-spacing:-.025em;line-height:1.04;font
     linear-gradient(100deg,
       var(--paper) 0%,
       var(--paper) var(--hero-fade-solid),
-      rgba(236,235,227,.55) calc(var(--hero-fade-solid) + 14%),
+      rgba(236,235,227,.35) calc(var(--hero-fade-solid) + 14%),
       rgba(236,235,227,0) var(--hero-fade-end)),
     linear-gradient(to bottom, rgba(236,235,227,0) 62%, var(--paper) 100%)}
 .hero-inner{position:relative;z-index:2;width:100%}
@@ -315,7 +315,7 @@ h1,h2,h3,h4{font-family:var(--disp);letter-spacing:-.025em;line-height:1.04;font
 @media(max-width:720px){
   .hero{min-height:82vh}
   /* on small screens the video sits behind a light veil so ink text stays legible */
-  .hero-fade{background:linear-gradient(to bottom,rgba(236,235,227,.50),rgba(236,235,227,.7))}
+  .hero-fade{background:linear-gradient(to bottom,rgba(236,235,227,.18),rgba(236,235,227,.40))}
   .nav-links{
   position:fixed;
   inset:74px 0 auto 0;
