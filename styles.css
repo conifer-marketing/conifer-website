@@ -283,7 +283,7 @@ h1,h2,h3,h4{font-family:var(--disp);letter-spacing:-.025em;line-height:1.04;font
   padding:.85em 1em;color:var(--paper);font-family:var(--body);font-size:1rem;transition:.2s;resize:vertical}
 .field input::placeholder,.field textarea::placeholder{color:rgba(244,243,238,.35)}
 .field input:focus,.field textarea:focus{outline:none;border-color:var(--signal);background:rgba(255,255,255,.08)}
-.form .btn{justify-content:center;margin-top:.4rem}
+.form .btn{justify-content:center;margin-top:1.5rem}
 .form-note{display:none;font-size:.95rem;padding:.9em 1.1em;border-radius:12px;margin-top:.4rem}
 .form-note.ok{display:block;background:rgba(195,227,98,.16);color:var(--signal);border:1px solid rgba(195,227,98,.35)}
 
