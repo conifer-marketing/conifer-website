@@ -9,6 +9,65 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<!-- Umami Analytics Tracking -->
+<script defer src="https://cloud.umami.is/script.js"
+data-website-id="6917401e-bb18-4dda-9c61-3ed059cf1a45"></script>
+
+<!-- Apollo Website Visitor Tracking -->
+<script>
+function initApollo(){
+  var n=Math.random().toString(36).substring(7),
+      o=document.createElement("script");
+  o.src="https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache="+n;
+  o.async=true;
+  o.defer=true;
+  o.onload=function(){
+    window.trackingFunctions.onLoad({
+      appId:"6631831695255402e8b8b5d7"
+    });
+  };
+  document.head.appendChild(o);
+}
+initApollo();
+</script>
+
+<!-- Apollo Form Enrichment -->
+<script>
+(function initApolloInbound(){
+  var TIMEOUT_MS=15000;
+  var timeoutId;
+
+  var style=document.createElement('style');
+  style.id='apollo-form-prehide-css';
+  style.textContent='form:has(input[type="email" i]),form:has(input[name="email" i]),.hs-form-iframe{position:relative!important}form:has(input[type="email" i])::before,form:has(input[name="email" i])::before,.hs-form-iframe::before{content:"";position:absolute;inset:0;display:flex;align-items:center;justify-content:center;width:50px;height:50px;margin:auto;border:2.5px solid #e1e1e1;border-top:2.5px solid #9ea3a6;border-radius:50%;animation:spin 1s linear infinite;background-color:transparent;pointer-events:auto;z-index:999999;opacity:1}form:has(input[type="email" i]) *,form:has(input[name="email" i]) *,.hs-form-iframe *{opacity:0!important;user-select:none!important;pointer-events:none!important}@keyframes spin{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}';
+
+  (document.head||document.documentElement).appendChild(style);
+
+  function cleanup(){
+    var styleEl=document.getElementById('apollo-form-prehide-css');
+    if(styleEl) styleEl.remove();
+    if(timeoutId) clearTimeout(timeoutId);
+  }
+
+  timeoutId=setTimeout(cleanup,TIMEOUT_MS);
+
+  var script=document.createElement('script');
+  script.src='https://assets.apollo.io/js/apollo-inbound.js?nocache='+Math.random().toString(36).substring(7);
+  script.defer=true;
+
+  script.onload=function(){
+    ApolloInbound.formEnrichment.init({
+      appId:'6a3efb7bf61520000c8e170e',
+      onReady:cleanup,
+      onError:cleanup
+    });
+  };
+
+  script.onerror=cleanup;
+
+  document.head.appendChild(script);
+})();
+</script>
 </head>
 <body>
 
