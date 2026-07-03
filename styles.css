@@ -315,7 +315,7 @@ h1,h2,h3,h4{font-family:var(--disp);letter-spacing:-.025em;line-height:1.04;font
 @media(max-width:720px){
   .hero{min-height:82vh}
   /* on small screens the video sits behind a light veil so ink text stays legible */
-  .hero-fade{background:linear-gradient(to bottom,rgba(236,235,227,.40),rgba(236,235,227,.75))}
+  .hero-fade{background:linear-gradient(to bottom,rgba(236,235,227,.30),rgba(236,235,227,.60))}
   .nav-links{
   position:fixed;
   inset:74px 0 auto 0;
