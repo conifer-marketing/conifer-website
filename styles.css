@@ -266,7 +266,7 @@ h1,h2,h3,h4{font-family:var(--disp);letter-spacing:-.025em;line-height:1.04;font
   background:var(--ink);color:var(--paper);border-radius:var(--r-xl);padding:clamp(2rem,5vw,4rem)}
 .cta-grid h2{color:var(--paper);font-size:clamp(1.9rem,3.4vw,2.8rem)}
 .cta-grid .lead{color:rgba(244,243,238,.7);margin-top:1.1rem;max-width:40ch}
-.form{display:grid;gap:1.35rem}
+.form{display:grid;row-gap:1.35rem}
 .form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
 .field{display:flex;flex-direction:column;gap:.45rem;}
 .field label{font-family:var(--mono);font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:rgba(244,243,238,.6)}
