@@ -61,7 +61,36 @@
       es.forEach(function(e){ if(e.isIntersecting && !done.has(e.target)){ done.add(e.target); count(e.target); c.unobserve(e.target); } });
     }, {threshold:.6});
     document.querySelectorAll('[data-count]').forEach(function(el){ c.observe(el); });
-  } else {
+    } else {
     document.querySelectorAll('[data-count]').forEach(function(el){ count(el); });
+  }
+
+  /* Netlify form submit without leaving page */
+  var form = document.getElementById("motorForm");
+
+  if (form) {
+    form.addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      if (!form.checkValidity()) {
+        form.reportValidity();
+        return;
+      }
+
+      fetch("/", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded"
+        },
+        body: new URLSearchParams(new FormData(form)).toString()
+      })
+      .then(function() {
+        form.reset();
+        document.getElementById("formNote").classList.add("ok");
+      })
+      .catch(function() {
+        alert("Something went wrong. Please try again.");
+      });
+    });
   }
 })();
