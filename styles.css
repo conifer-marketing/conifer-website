@@ -261,7 +261,7 @@ h1,h2,h3,h4{font-family:var(--disp);letter-spacing:-.025em;line-height:1.04;font
 .counter .label{font-size:.86rem;color:var(--ink-mute);margin-top:.5rem}
 .backers{margin-top:2.8rem}
 .backers .cap{font-family:var(--mono);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-mute);margin-bottom:1.4rem}
-.logo-row{display:flex;flex-wrap:wrap;align-items:center;gap:clamp(1.6rem,4vw,3.2rem)}
+.logo-row{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:clamp(1.6rem,4vw,3.2rem)}
 .logo-row img{max-height:34px;width:auto;opacity:.62;filter:grayscale(1);transition:.25s}
 .logo-row img:hover{opacity:1;filter:grayscale(0)}
 
