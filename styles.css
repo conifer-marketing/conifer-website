@@ -334,9 +334,28 @@ h1,h2,h3,h4{font-family:var(--disp);letter-spacing:-.025em;line-height:1.04;font
   .market .frame img{border-radius:var(--r-xl);border:1px solid var(--line-soft)}
 }
 @media(max-width:720px){
-  .hero{min-height:82vh}
-  /* on small screens the video sits behind a light veil so ink text stays legible */
-  .hero-fade{background:linear-gradient(to bottom,rgba(236,235,227,.20),rgba(236,235,227,.50))}
+  .hero{
+  min-height:auto;
+  display:flex;
+  flex-direction:column;
+  align-items:stretch;
+  overflow:visible;
+  padding:clamp(2rem,8vw,3rem) 0 clamp(2.5rem,8vw,3.5rem);
+}
+.hero-fade{display:none}
+.hero-bg{
+  position:relative;
+  inset:auto;
+  z-index:auto;
+  order:2;
+  margin-top:1.75rem;
+  border-radius:var(--r-xl);
+  border:1px solid var(--line-soft);
+  box-shadow:var(--shadow-lg);
+  overflow:hidden;
+  aspect-ratio:4/5;
+}
+.hero-inner{order:1}
   .nav-links{
   position:fixed;
   inset:74px 0 auto 0;
