@@ -349,6 +349,8 @@ h1,h2,h3,h4{font-family:var(--disp);letter-spacing:-.025em;line-height:1.04;font
   z-index:auto;
   order:2;
   margin-top:1.75rem;
+  margin-left:var(--pad);
+  margin-right:var(--pad);
   border-radius:var(--r-xl);
   border:1px solid var(--line-soft);
   box-shadow:var(--shadow-lg);
