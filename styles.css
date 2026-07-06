@@ -98,24 +98,9 @@ h1,h2,h3,h4{font-family:var(--disp);letter-spacing:-.025em;line-height:1.04;font
       rgba(236,235,227,0) var(--hero-fade-end)),
     linear-gradient(to bottom, rgba(236,235,227,0) 62%, var(--paper) 100%)}
 .hero-inner{position:relative;z-index:2;width:100%}
-.hero-copy{max-width:40rem;padding-top:1rem;position:relative}
-.hero-copy::before{
-  content:"";
-  position:absolute;
-  z-index:-1;
-  inset:-2.5rem -4rem -2.5rem -6rem;
-  background:radial-gradient(120% 130% at 28% 45%,
-      rgba(236,235,227,.94) 0%,
-      rgba(236,235,227,.82) 38%,
-      rgba(236,235,227,.42) 66%,
-      rgba(236,235,227,0) 88%);
-  pointer-events:none;
-}
-.hero h1{font-size:clamp(2.05rem,4.4vw,3.45rem);line-height:1.07;
-  text-shadow:0 2px 26px rgba(236,235,227,.55)}
+.hero h1{font-size:clamp(2.05rem,4.4vw,3.45rem);line-height:1.07}
 .hero .lead{font-size:clamp(1rem,1.35vw,1.12rem);color:var(--ink);
-  max-width:34rem;margin:1.4rem 0 0;line-height:1.55;
-  text-shadow:0 1px 16px rgba(236,235,227,.5)}
+  max-width:34rem;margin:1.4rem 0 0;line-height:1.55}
 .hero-actions{display:flex;gap:.9rem;flex-wrap:wrap;margin-top:2rem}
 
 /* ============================ SECTIONS ============================ */
