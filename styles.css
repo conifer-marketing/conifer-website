@@ -260,10 +260,11 @@ h1,h2,h3,h4{font-family:var(--disp);letter-spacing:-.025em;line-height:1.04;font
 .counter .num{font-family:var(--disp);font-weight:700;font-size:clamp(1.9rem,3.4vw,2.7rem);letter-spacing:-.02em;font-variant-numeric:tabular-nums}
 .counter .label{font-size:.86rem;color:var(--ink-mute);margin-top:.5rem}
 .backers{margin-top:2.8rem}
-.backers .cap{font-family:var(--mono);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-mute);margin-bottom:1.4rem}
+.backers .cap{font-family:var(--mono);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-mute);margin-bottom:1.4rem;text-align:center}
 .logo-row{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:clamp(1.6rem,4vw,3.2rem)}
 .logo-row img{max-height:34px;width:auto;opacity:.62;filter:grayscale(1);transition:.25s}
 .logo-row img:hover{opacity:1;filter:grayscale(0)}
+.logo-row img[alt="Lucid"]{max-height:24px}
 
 /* ============================ TEAM ============================ */
 .team .meta{font-family:var(--mono);font-size:.92rem;color:var(--ink-mute);letter-spacing:.02em;margin:-1rem 0 2.4rem}
@@ -276,7 +277,7 @@ h1,h2,h3,h4{font-family:var(--disp);letter-spacing:-.025em;line-height:1.04;font
 .founder ul{list-style:none}
 .founder li{font-size:.92rem;color:var(--ink-mute);padding:.15em 0;position:relative;padding-left:1.1em}
 .founder li::before{content:"";position:absolute;left:0;top:.7em;width:5px;height:5px;background:var(--signal);border-radius:50%}
-.team .from{font-size:1.05rem;color:var(--ink-mute);margin:2.6rem 0 1.4rem;max-width:50ch}
+.team .from{font-size:1.05rem;color:var(--ink-mute);margin:2.6rem auto 1.4rem;max-width:50ch;text-align:center}
 
 /* ============================ CTA / FORM ============================ */
 .cta{padding:clamp(4rem,9vh,7rem) 0}
