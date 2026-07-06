@@ -277,6 +277,8 @@ h1,h2,h3,h4{font-family:var(--disp);letter-spacing:-.025em;line-height:1.04;font
 .founder ul{list-style:none}
 .founder li{font-size:.92rem;color:var(--ink-mute);padding:.15em 0;position:relative;padding-left:1.1em}
 .founder li::before{content:"";position:absolute;left:0;top:.7em;width:5px;height:5px;background:var(--signal);border-radius:50%}
+.founder-link{display:inline-block;margin-top:.7rem;font-size:.85rem;font-weight:600;color:var(--ink-mute);transition:color .2s}
+.founder-link:hover{color:var(--ink)}
 .team .from{font-size:1.05rem;color:var(--ink-mute);margin:2.6rem auto 1.4rem;max-width:50ch;text-align:center}
 
 /* ============================ CTA / FORM ============================ */
