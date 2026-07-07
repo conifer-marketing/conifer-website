@@ -357,6 +357,15 @@ h1,h2,h3,h4{font-family:var(--disp);letter-spacing:-.025em;line-height:1.04;font
   overflow:hidden;
   aspect-ratio:4/5;
 }
+.hero-bg video{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center;
+}
+.hero-inner{order:1}
 .hero-inner{order:1}
   .nav-links{
   position:fixed;
