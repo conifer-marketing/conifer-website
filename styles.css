@@ -237,7 +237,7 @@ h1,h2,h3,h4{font-family:var(--disp);letter-spacing:-.025em;line-height:1.04;font
 .spec-cols .hd{font-family:var(--mono);color:var(--ink);text-transform:uppercase;letter-spacing:.05em;
   font-size:.66rem;font-weight:700;background:rgba(195,227,98,.22)}
 .spec-cols .rk{font-family:var(--mono);color:var(--ink-mute);text-transform:uppercase;letter-spacing:.03em;font-size:.66rem}
-.spec-cols .rv{text-align:right;font-weight:600}
+.spec-cols .rv{text-align:right;font-weight:600;white-space:nowrap}
 
 /* ============================ TRACTION ============================ */
 .traction .banner{position:relative;border-radius:var(--r-xl);overflow:hidden;
